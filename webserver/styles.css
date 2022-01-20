@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(21, 61, 98);
+}
+
+.ip {
+    color: rgb(233, 233, 233);
+    font-size: 15;
+    font-weight: bold;
+    text-align: center;
+}
+
+.servers {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    background-color: rgb(13, 36, 58);
+    /* if overflow x */
+    overflow-x: auto;
+    /* if overflow y */
+    overflow-y: hidden;
+    
+}
+
+.server_tab {
+    background-color: rgb(21, 47, 71);
+    color: rgb(233, 233, 233);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 5px;
+    width: 100px;
+    border-color: rgb(15, 77, 136);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 5px rgb(15, 77, 136);
+}
+
+.server_tab:hover {
+    background-color: rgb(15, 77, 136);
+    color: rgb(233, 233, 233);
+    box-shadow: 0px 0px 5px rgb(15, 77, 136);
+    cursor: pointer;
+}
+
+.server_tab_selected {
+    background-color: rgb(15, 77, 136);
+    color: rgb(233, 233, 233);
+    box-shadow: 0px 0px 5px rgb(15, 77, 136);
+}
+
+.DISPLAY {
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    bottom: 75px;
+    /* no overflow allow scrolling inside with no scroll bar */
+    overflow: scroll;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.server_text {
+    color: rgb(228, 228, 228);
+    /* this text will be at the bottom if the DISPLAY */
+    font-size: 16px;
+    
+}
+
+.command_input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(13, 36, 58);
+    color: rgb(233, 233, 233);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-color: rgb(15, 77, 136);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 5px rgb(15, 77, 136);
+}
+
+.command_input:focus {
+    outline: none;
+    
+}
